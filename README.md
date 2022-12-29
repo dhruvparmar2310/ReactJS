@@ -80,5 +80,18 @@ The dependency will also be moved into your root's `package.json` file. Once you
 ## Development
 
 ### Analyzing Bundle Size
----
+Source map explorer analyzes JavaScript bundles using the source maps. This helps you understand where code bloat is coming from.
 
+To add `Source map explorer` to your CRA project, run this :
+```
+npm i --save-dev source-map-explorer
+```
+Then add `analyze` in `scripts` inside `package.json`:
+```javascript
+"analyze": "source-map-explorer 'build/static/js/*.js'",
+```
+Then to analyze the bundle run the below commands:
+```
+npm run build
+npm run analyze
+```
