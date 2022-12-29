@@ -77,6 +77,9 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 The dependency will also be moved into your root's `package.json` file. Once you have `ejected` from CRA, you can't undo it. It is mostly used to make your own configuration work on your project.
 
+![Screen shot-1](SS-1.png)
+![Screen shot-2](SS-2.png)
+
 ## Development
 
 ### Analyzing Bundle Size
