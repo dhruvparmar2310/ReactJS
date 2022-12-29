@@ -44,7 +44,12 @@ Here `public/index.html` is your default page template. If you wanna create your
 
 ## Available Scripts :
 After running `npx create-react-app my-first-app` command, you will have few scripts with you to perform it:
-1: start
-2: test
-3: build
-4: eject
+1. start
+2. test
+3. build
+4. eject
+
+### 1.  `npm start` :
+It is used to run your app in development mode or you can say, it is used to start your packages. If the `scripts` object inside `package.json` doesn't defines a `start` property, npm will run `node server.js` by default.
+
+By default it runs on `3000` port of localhost.
