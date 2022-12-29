@@ -107,3 +107,28 @@ Then to analyze the bundle run the below commands:
 npm run build
 npm run analyze
 ```
+
+
+## Using HTTPS in Development
+By default your app will work on **http://localhost:3000/**, but if you wanna work on **HTTPS**, then follow the steps :
+
+### For Windows : 
+Add this to `start` scripts
+```javascript
+set HTTPS=true&&npm start
+```
+
+### For Linux/MacOS :
+Add this to `start` scripts
+```javascripts
+HTTPS=true npm start
+```
+
+> *Note that the server will use a self-signed certificate, so your web browser will almost definitely display a warning upon accessing the page.*
+
+### So for Custom SSL Certificate
+Add this to `start` scripts
+
+```javascript
+HTTPS=true SSL_CRT_FILE=cert.crt SSL_KEY_FILE=cert.key npm start
+```
