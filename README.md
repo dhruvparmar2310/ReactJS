@@ -40,4 +40,11 @@ my-app/
     logo.svg
 ```
 
-Here `public/index.html` is your default page template. If you wanna create your own templates you can [visit here](https://create-react-app.dev/docs/custom-templates) for more info. You will also find `src/index.js` which is your entry point of the app.
+Here `public/index.html` is your default page template. If you wanna create your own templates you can [visit here](https://create-react-app.dev/docs/custom-templates) for more info. You will also find `src/index.js` which is your entry point of the app. Only files inside `src` are processed by the webpack. So, we also creates `assets` folder inside it.
+
+## Available Scripts :
+After running `npx create-react-app my-first-app` command, you will have few scripts with you to perform it:
+1: start
+2: test
+3: build
+4: eject
