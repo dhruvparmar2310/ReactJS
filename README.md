@@ -7,7 +7,7 @@ CRA stands for Create-react-app through npm or npx. Create-react-app is an offic
 
 By creating react app through `npx create-react-app`, there is no need to create config file of [`webpack`](https://webpack.js.org/concepts/#entry) and [`Babel`](https://babeljs.io/docs/en/). It provides the hidden feature of `webpack` and `Babel`, which is installed by `npx` when you run `npx create-react-app my-app` command. `npx` will install all the latest versions of package.
 
-> I prefer to read the official documentation of [Create-react-app](https://create-react-app.dev/docs/getting-started/).
+> *I prefer to read the official documentation of [Create-react-app](https://create-react-app.dev/docs/getting-started/).*
 
 
 ### To create your first react app with `npx` :
@@ -80,15 +80,16 @@ The dependency will also be moved into your root's `package.json` file. Once you
 ## Development
 
 ### Analyzing Bundle Size
-Source map explorer analyzes JavaScript bundles using the source maps. This helps you understand where code bloat is coming from. 
-
-Analyze and debug JavaScript (or Sass or LESS) code bloat through source maps.
+---
+Source map explorer analyzes JavaScript bundles using the source maps. This helps you understand where code bloat is coming from. Analyze and debug JavaScript (or Sass or LESS) code bloat through source maps.
 
 The source map explorer determines which file each byte in your minified code came from. It shows you a treemap visualization to help you debug where all the code is coming from. `.js.map` file is that which is used to debug, and it is present after the build is created '**build/static/js/.js.map**' files.
 
 What's ever the error comes, sometimes we can't get from were it is coming, so here the source map comes in picture. We can get that error through source map files.
 
-> [Read this blog to understand it in a better way.](https://www.bugsnag.com/blog/source-maps)
+
+> *[Read this blog to understand it in a better way.](https://www.bugsnag.com/blog/source-maps)*
+
 
 To add `Source map explorer` to your CRA project, run this :
 ```
