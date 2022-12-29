@@ -80,7 +80,15 @@ The dependency will also be moved into your root's `package.json` file. Once you
 ## Development
 
 ### Analyzing Bundle Size
-Source map explorer analyzes JavaScript bundles using the source maps. This helps you understand where code bloat is coming from.
+Source map explorer analyzes JavaScript bundles using the source maps. This helps you understand where code bloat is coming from. 
+
+Analyze and debug JavaScript (or Sass or LESS) code bloat through source maps.
+
+The source map explorer determines which file each byte in your minified code came from. It shows you a treemap visualization to help you debug where all the code is coming from. `.js.map` file is that which is used to debug, and it is present after the build is created '**build/static/js/.js.map**' files.
+
+What's ever the error comes, sometimes we can't get from were it is coming, so here the source map comes in picture. We can get that error through source map files.
+
+> [Read this blog to understand it in a better way.](https://www.bugsnag.com/blog/source-maps)
 
 To add `Source map explorer` to your CRA project, run this :
 ```
