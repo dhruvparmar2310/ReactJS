@@ -126,9 +126,16 @@ HTTPS=true npm start
 
 > *Note that the server will use a self-signed certificate, so your web browser will almost definitely display a warning upon accessing the page.*
 
+![Screen shot-3](SS-3.png)
+
+### To generate SSL Certificate :
+> *[Read this Blog](https://medium.com/swlh/how-to-make-react-js-use-https-in-development-4ead560eff10)*
+
 ### So for Custom SSL Certificate
 Add this to `start` scripts
 
 ```javascript
 HTTPS=true SSL_CRT_FILE=cert.crt SSL_KEY_FILE=cert.key npm start
 ```
+
+
