@@ -54,9 +54,11 @@ It is used to run your app in development mode or you can say, it is used to sta
 
 > *By default it runs on `3000` port of localhost.*
 
+
 ### Whats the difference between `npm run start` and `npm start` ?
 ---
 `npm start` is the short form for `npm run start`.
+-
 
 ### 2.  `npm test` :
 
