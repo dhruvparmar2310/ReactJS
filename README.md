@@ -58,7 +58,11 @@ It is used to run your app in development mode or you can say, it is used to sta
 ### Whats the difference between `npm run start` and `npm start` ?
 ---
 `npm start` is the short form for `npm run start`.
--
+
 
 ### 2.  `npm test` :
+Launches the test runner in the interactive watch mode.
 
+
+### 3. `npm run build` :
+`npm run build` creates a `build` directory with a production build of your app. It does the same tasks which `npm start` does. Instead of checking for available ports and running a development server, the script will execute `build` function which is available in '**react-srcipts/script/build.js**' which will bundle all your seperate files into one **bundle.js** file. It will ensure, wheather your code is optimized and minified to make better performance.
