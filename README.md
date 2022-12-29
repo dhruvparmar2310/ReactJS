@@ -52,4 +52,4 @@ After running `npx create-react-app my-first-app` command, you will have few scr
 ### 1.  `npm start` :
 It is used to run your app in development mode or you can say, it is used to start your packages. If the `scripts` object inside `package.json` doesn't defines a `start` property, npm will run `node server.js` by default.
 
-By default it runs on `3000` port of localhost.
+> *By default it runs on `3000` port of localhost.*
