@@ -66,3 +66,13 @@ Launches the test runner in the interactive watch mode.
 
 ### 3. `npm run build` :
 `npm run build` creates a `build` directory with a production build of your app. It does the same tasks which `npm start` does. Instead of checking for available ports and running a development server, the script will execute `build` function which is available in '**react-srcipts/script/build.js**' which will bundle all your seperate files into one **bundle.js** file. It will ensure, wheather your code is optimized and minified to make better performance.
+
+### 4. `npm run eject` :
+
+> *Note: This is one way operation. If you run `npm run eject` once time, you cannot go back.*
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project (react-scripts).
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc.) into your project as dependencies in `package.json`. All the configuration files from `react-scripts` will be copied into your project roots **react-scripts/config/** folder. And then, the **scritps** to run the build will be copied into the **scripts/** folder.
+
+The dependency will also be moved into your root's `package.json` file. Once you have `ejected` from CRA, you can't undo it. It is mostly used to make your own configuration work on your project.
