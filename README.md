@@ -144,7 +144,7 @@ HTTPS=true SSL_CRT_FILE=cert.crt SSL_KEY_FILE=cert.key npm start
 - [Explore What is BEM Methodology by its Official Site](https://en.bem.info/methodology/)
 
 ## CSS Module :
-CSS Module is a **CSS file** in which all classNames and animation names are scoped locally by default. CSS Modules are convienient for components that are placed in seperate files. The CSS inside a module is available only for the components that imported it. CSS Modules allows the scoping of CSS by automatically creating a unique classname of the format `[filename]\_[classname]\_\_[hash]`. It will not <code>clashes</code> if other components with simple `.css` files have same `className`.
+CSS Module is a **CSS file** in which all classNames and animation names are scoped locally by default. CSS Modules are convienient for components that are placed in seperate files. The CSS inside a module is available only for the components that imported it. CSS Modules allows the scoping of CSS by automatically creating a unique classname of the format `[filename]\_[classname]\_\_[hash]`. It will not **clashes** if other components with simple `.css` files have same `className`.
 
 ### How to create CSS Module file :
 Create CSS Module with `.module.css` extension.
@@ -188,4 +188,28 @@ const Card = () => {
 }
 
 export default Card;
+```
+
+### What is Styled Components :
+The name itself says, there will be an styled component which can be used like React Components. Styled Component is an library and its unpacked size is **3.17 MB** and there are total **325** files.
+
+For example: I have an styled component of Title
+
+> *title.css*
+```javascript
+const Title = styled.h1`
+  font-size: 1.5em;
+  color: red;
+`;
+```
+
+> *Home.js*
+```javascript
+import Title from './style/Title/title.css'
+
+const Home = () => {
+  return (
+    <Title>A styled component</Title>
+  )
+}
 ```
