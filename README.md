@@ -245,3 +245,24 @@ syntax:
 $[variableName]: value;
 ```
 
+## Adding a CSS Reset :
+There is an option in css which is built-in feature: (*not for CSS reset, but this developer's should know.*)
+```javascript
+.home{
+  background: red;
+  margin: 30px auto;
+  padding: 30px;
+  all: unset; /* it will not apply the style even you have given your styles to home */
+}
+```
+
+There are many ways to Reset CSS, One of the best option I found is [`normalize.css`](https://necolas.github.io/normalize.css/). All the thing you need to do is :
+```
+npm i normalize.css
+```
+ It will install normalize.css file in your project, or you can create `normalize.css` file in the root folder, and paste the content [this](https://necolas.github.io/normalize.css/8.0.1/normalize.css). The main concept of it is, it will remove duplication, reset the style to default.
+ 
+ To use css reset, `@import` it on the `style.css` at the top:
+ ```
+ @import-normalize /* *it will bring to normalize.css file.* */
+ ```
