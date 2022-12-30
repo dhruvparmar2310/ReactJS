@@ -217,6 +217,11 @@ const Home = () => {
 ## Adding a Sass Stylesheet :
 Sass stands for **Syntactically Awesome Style-Sheet**. It is an extension of CSS. It reduce the repetition of CSS code. It was designed by Hampton Catlin. Sass lets you to use features that don't exist in CSS, like `variables`, `nested rules`, `mixin`, `@use`, `@include`, etc. The file extension can be `.scss` or `.sass`.
 
+To use Sass, you need to install sass:
+```
+npm install sass
+```
+
 for example: my website runs on 3 colors than I can create variables in `_variables.scss` files and use it.
 > *_variables.scss*
 ```javascript
