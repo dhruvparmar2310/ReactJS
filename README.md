@@ -221,9 +221,7 @@ To use Sass, you need to install sass:
 ```
 npm install sass
 ```
-=
-==
-===
+
 for example: my website runs on 3 colors than I can create variables in `_variables.scss` files and use it.
 > *_variables.scss*
 ```javascript
