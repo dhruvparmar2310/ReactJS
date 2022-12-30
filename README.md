@@ -138,4 +138,10 @@ Add this to `start` scripts
 HTTPS=true SSL_CRT_FILE=cert.crt SSL_KEY_FILE=cert.key npm start
 ```
 
+## Adding a Stylesheet
+- [Official Documentation](https://create-react-app.dev/docs/adding-a-stylesheet)
+- [Blog of BEM](https://medium.com/seek-blog/block-element-modifying-your-javascript-components-d7f99fcab52b)
+- [Explore What is BEM Methodology by its Official Site](https://en.bem.info/methodology/)
 
+## CSS Module :
+CSS Module is a *CSS file* in which all classNames and animation names are scoped locally by default.
