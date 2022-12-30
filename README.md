@@ -143,7 +143,7 @@ HTTPS=true SSL_CRT_FILE=cert.crt SSL_KEY_FILE=cert.key npm start
 - [Blog of BEM](https://medium.com/seek-blog/block-element-modifying-your-javascript-components-d7f99fcab52b)
 - [Explore What is BEM Methodology by its Official Site](https://en.bem.info/methodology/)
 
-## CSS Module :
+## Adding a CSS Module :
 CSS Module is a **CSS file** in which all classNames and animation names are scoped locally by default. CSS Modules are convienient for components that are placed in seperate files. The CSS inside a module is available only for the components that imported it. CSS Modules allows the scoping of CSS by automatically creating a unique classname of the format `[filename]\_[classname]\_\_[hash]`. It will not **clashes** if other components with simple `.css` files have same `className`.
 
 ### How to create CSS Module file :
@@ -213,3 +213,28 @@ const Home = () => {
   )
 }
 ```
+
+## Adding a Sass Stylesheet :
+Sass stands for **Syntactically Awesome Style-Sheet**. It is an extension of CSS. It reduce the repetition of CSS code. It was designed by Hampton Catlin. Sass lets you to use features that don't exist in CSS, like `variables`, `nested rules`, `mixin`, `@use`, `@include`, etc. The file extension can be `.scss` or `.sass`.
+
+for example: my website runs on 3 colors than I can create variables in `_variables.scss` files and use it.
+> *_variables.scss*
+```javascript
+$primary: #a2b9bc;
+$secondary: #b2ad7f;
+$main: #fff;
+```
+
+### How does Sass Works ?
+A browser does not understand a Sass Code. Therefore, you will need a Sass pre-processor to convert Sass code into css. This process is known as **Transpiling**. 
+
+Transpiling translate the sass code automatically at the time of `build`.
+
+### What is Sass Variable ?
+With Sass, you can store information in variables like `string`, `number`, `colors`, `booleans`, `list`, `nulls`, etc.
+
+syntax:
+```javascript
+$[variableName]: value;
+```
+
