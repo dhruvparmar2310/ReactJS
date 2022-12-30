@@ -234,7 +234,7 @@ Transpiling translate the sass code automatically at the time of `build`.
 With Sass, you can store information in variables like `string`, `number`, `colors`, `booleans`, `list`, `nulls`, etc.
 
 syntax:
-```javascript
+```
 $[variableName]: value;
 ```
 
