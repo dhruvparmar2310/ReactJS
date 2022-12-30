@@ -174,7 +174,7 @@ For example : create the CSS module file named as `card.module.css`
 
 Now `import` the style module in your component, say for example, I have shopping cart website, now I need this style in my `card` component:
 
-*Card.js*
+> *Card.js*
 ```javascript
 import styles from './card.module.css'
 
