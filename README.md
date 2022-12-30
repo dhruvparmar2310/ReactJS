@@ -267,4 +267,22 @@ npm i normalize.css
  @import-normalize /* it will bring to normalize.css file. */
  ```
 
-## What is GraphQL ?
+## What is the use of Public Folder ?
+Generally, creating the app by `npx create-react-app`, you will be able to see something like `%PUBLIC_URL%` under the link tags in `public/` folder. 
+
+For this you need to know few thnigs:
+- `webpack` will only pre-process the `src` folder, but not the `public` folder.
+- The `webpack` will only minifies the `src` folder, rather than `public`.
+- To use `public` folder, we need to specifiy `%  PUBLIC_URL%` to the link tags
+
+for example: before the `npm run build`
+```javascript
+<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+```
+
+after running `npm run build`
+```javascript
+<link rel="manifest" href="/manifest.json" /> 
+```
+
+It means, if we don't specify `%PUBLIC_URL%` than it will not use that file during `build` process.
