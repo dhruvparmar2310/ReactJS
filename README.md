@@ -149,16 +149,42 @@ CSS Module is a **CSS file** in which all classNames and animation names are sco
 ### How to create CSS Module file :
 Create CSS Module with `.module.css` extension.
 
-For example : create the CSS module file named as `error-button.module.css`
+For example : create the CSS module file named as `card.module.css`
 ```javascript
-.error-button {
+.card {
+  width: 300px;
   color: #f3f3f3;
-  background-color: red;
-  text-align: center;
+  background-color: #2596be;
+  padding: 30px;
   border-radius: 5px;
-  border: 1px solid red;
+}
+
+.card-img {
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.card-content {
+  background: #f3f3f3;
+  color: #666;
+  object-fit: cover;
 }
 ```
-```javascript
 
+Now `import` the style module in your component, say for example, I have shopping cart website, now I need this style in my `card` component:
+`*Card.js*`
+```javascript
+import styles from './card.module.css'
+
+const Card = () => {
+  return <div className={styles.card}>
+            <img src={} alt={} className={styles.card-img} />
+            <div className={styles.card-content}>
+              <h1>Title</h1>
+            </div>
+         </div>
+}
+
+export default Card;
 ```
