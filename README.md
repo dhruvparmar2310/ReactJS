@@ -264,5 +264,7 @@ npm i normalize.css
  
  To use css reset, `@import` it on the `style.css` at the top:
  ```
- @import-normalize /* *it will bring to normalize.css file.* */
+ @import-normalize /* it will bring to normalize.css file. */
  ```
+
+## What is GraphQL ?
