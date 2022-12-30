@@ -191,7 +191,7 @@ export default Card;
 ```
 
 ### What is Styled Components :
-The name itself says, there will be an styled component which can be used like React Components. Styled Component is an library and its unpacked size is **3.17 MB** and there are total **325** files.
+The name itself says, there will be an styled component which can be used like React Components. Styled Component is an library and its unpacked size is **3.17 MB** and there are total **325** files. It also have theme concept, by wrapping your code under `<ThemeProvider>`...`</ThemeProvider>`. With the help of this provider, you can also create a dark mode themes.
 
 For example: I have an styled component of Title
 
