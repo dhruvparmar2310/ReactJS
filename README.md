@@ -144,7 +144,7 @@ HTTPS=true SSL_CRT_FILE=cert.crt SSL_KEY_FILE=cert.key npm start
 - [Explore What is BEM Methodology by its Official Site](https://en.bem.info/methodology/)
 
 ## CSS Module :
-CSS Module is a **CSS file** in which all classNames and animation names are scoped locally by default. CSS Modules are convienient for components that are placed in seperate files. The CSS inside a module is available only for the components that imported it. 
+CSS Module is a **CSS file** in which all classNames and animation names are scoped locally by default. CSS Modules are convienient for components that are placed in seperate files. The CSS inside a module is available only for the components that imported it. CSS Modules allows the scoping of CSS by automatically creating a unique classname of the format `[filename]\_[classname]\_\_[hash]`. It will not <code>clashes</code> if other components with simple `.css` files have same `className`.
 
 ### How to create CSS Module file :
 Create CSS Module with `.module.css` extension.
