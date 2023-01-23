@@ -348,3 +348,23 @@ They are components used to wrap other components which may throw errors.
 ```
 
 Suspense and ErrorBoundary component will work together. Your Suspense component is wrapped by ErrorBoundary component.
+
+When working with Routers, you may write the suspense component as example given below :
+```javascript
+import React, { Suspense, lazy } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+const Home = lazy(() => import('./routes/Home'));
+const About = lazy(() => import('./routes/About'));
+
+const App = () => (
+  <Router>
+    <Suspense fallback={<div>Loading...</div>}>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </Suspense>
+  </Router>
+);
+```
