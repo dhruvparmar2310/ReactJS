@@ -286,3 +286,25 @@ after running `npm run build`
 ```
 
 It means, if we don't specify `%PUBLIC_URL%` than it will not use that file during `build` process.
+
+## What is Code Splitting ?
+Instead of downloading the entire app before users can use it, code splitting allows you to split your code into small `chunks` which you can then load on demand.
+
+Code-splitting your app can help you “lazy-load” just the things that are currently needed by the user, which can dramatically improve the performance of your app. While you haven’t reduced the overall amount of code in your app, you’ve avoided loading code that the user may never need, and reduced the amount of code needed during the initial load.
+
+### import()
+import() is the concept of code-splitting, we can use it dynamically.
+
+> Before:
+```javascript
+import { add } from './math'
+
+console.log(add(10, 20))
+```
+
+> After:
+```javascript
+import('./math').then(math => {
+  console.log(math.add(10, 20))
+})
+```
