@@ -295,16 +295,29 @@ Code-splitting your app can help you “lazy-load” just the things that are cu
 ### import()
 import() is the concept of code-splitting, we can use it dynamically.
 
-> Before:
+> *Before:*
 ```javascript
 import { add } from './math'
 
 console.log(add(10, 20))
 ```
 
-> After:
+> *After:*
 ```javascript
 import('./math').then(math => {
   console.log(math.add(10, 20))
 })
+```
+
+### What is React.lazy() ?
+lazy() is the concept of code splitting, and this function will render the dynamic `import` as a regular component.
+
+> *Before:*
+```javascript
+import Card from './card'
+```
+
+> *After:*
+```javascript
+const Card = React.lazy(() => import('./card'));
 ```
