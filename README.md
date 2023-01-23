@@ -328,3 +328,9 @@ The lazy component should then be rendered inside a `Suspense` component, which 
 
 ### Few things to know about Suspense Component :
 - `<Suspense>` is a first-party React component which is used to wrap other components that might make asynchronous requests. Any time a child component performs some action resulting in a loading state, such as a network request, a wrapping <Suspense> component can toggle its rendering to show a loading UI, like a `<Spinner />`.
+
+```javascript
+  <Suspense fallback={<Loading />}>
+    <FetchApi />
+  </Suspense>
+```
