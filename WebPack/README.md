@@ -2,6 +2,11 @@
 
 > *Refer the official [documentation](https://webpack.js.org/guides/installation)*
 
+## Getting Started
+Webpack is used to compile JS modules. Once installed, you can interact with webpack through CLI or an Api.
+
+
+
 
 ## Webpack Installation :
 To install latest or other `version`s of webpack, run the below code
