@@ -13,7 +13,22 @@ npm install --save-dev webpack webpack-cli
 
 After running above commands, you will have `node_modules` and `package.json`, `package-lock.json` file with you. `node_modules` will contain all the packages which are needed in the webpack, even webpack dependency packages will be installed automatically. All the dependency packages of webpack will be installed in Development mode automatically, which you can find in `package-lock.json` file.
 
+Now create `index.html` file in your root folder and create `/src` directory and inside it create `index.js` file. Write the below code in `index.js` which is present under your `src` directory.
+```javascript
+function component() {
+  const element = document.createElement('div');
 
+  // Lodash, currently included via a script, is required for this line to work
+  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+
+  return element;
+}
+
+document.body.appendChild(component());
+```
+
+
+--
 ## Webpack Installation :
 To install latest or other `version`s of webpack, run the below code
 ```javascript
