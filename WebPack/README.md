@@ -27,6 +27,20 @@ function component() {
 document.body.appendChild(component());
 ```
 
+Also write the below code in your `index.html` file:
+```javascript
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Getting Started</title>
+    <script src="https://unpkg.com/lodash@4.17.20"></script>
+  </head>
+  <body>
+    <script src="./src/index.js"></script>
+  </body>
+</html>
+```
 
 --
 ## Webpack Installation :
