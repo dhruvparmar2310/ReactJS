@@ -5,7 +5,13 @@
 ## Getting Started
 Webpack is used to compile JS modules. Once installed, you can interact with webpack through CLI or an Api.
 
+To get started, create an empty folder called `webpack-demo` and run the below code.
+```javascript
+npm init -y /* it will create package.json and package-lock.json file */
+npm install --save-dev webpack webpack-cli
+```
 
+After running above commands, you will have `node_modules` and `package.json`, `package-lock.json` file with you. `node_modules` will contain all the packages which are needed in the webpack, even webpack dependency packages will be installed automatically. All the dependency packages of webpack will be installed in Development mode automatically, which you can find in `package-lock.json` file.
 
 
 ## Webpack Installation :
