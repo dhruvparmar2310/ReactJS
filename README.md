@@ -334,3 +334,8 @@ The lazy component should then be rendered inside a `Suspense` component, which 
     <FetchApi />
   </Suspense>
 ```
+
+### What is Error Boundary Component ?
+Error Boundary component is the concept of catching the error just like an `try()` and `catch()` method. But it can't catch the error's like *event handler*, *async code*, *server side rendering*. Error Boundary component is used only during development and it should be disabled during production. With the help of it, we can trace the perfect error in console by the perfect path, line number, etc. 
+
+It is default when we are working with `create-react-app`. If you are not using `create-react-app`, you need to specify the plugin in your `Bebal` configuration file.
