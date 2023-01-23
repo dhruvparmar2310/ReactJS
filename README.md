@@ -321,3 +321,10 @@ import Card from './card'
 ```javascript
 const Card = React.lazy(() => import('./card'));
 ```
+
+`React.lazy()` takes a function which must call a dynamic `import()`. This must return a Promise which resolves to a module with a default export containing a React component.
+
+The lazy component should then be rendered inside a `Suspense` component, which allows us to show some **fallback** content (such as a *loading indicator*) while we’re waiting for the lazy component to load.
+
+### Few things to know about Suspense Component :
+- `<Suspense>` is a first-party React component which is used to wrap other components that might make asynchronous requests. Any time a child component performs some action resulting in a loading state, such as a network request, a wrapping <Suspense> component can toggle its rendering to show a loading UI, like a `<Spinner />`.
