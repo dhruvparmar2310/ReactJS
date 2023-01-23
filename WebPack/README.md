@@ -43,6 +43,6 @@ Also write the below code in your `index.html` file:
 ```
 
 You can config webpack in three ways:
-1> Manually creating `dist/index.html`
-2> config webpack through `npx webpack --config webpack.config.js`
-3> by running `npm run build`
+1) Manually creating `dist/index.html`
+2) config webpack through `npx webpack --config webpack.config.js`
+3) by running `npm run build`
