@@ -368,3 +368,5 @@ const App = () => (
   </Router>
 );
 ```
+
+Also cover other blog of [Webpack](/WebPack/README.md)
