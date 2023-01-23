@@ -346,3 +346,5 @@ They are components used to wrap other components which may throw errors.
   <App />
 </ErrorBoundary>
 ```
+
+Suspense and ErrorBoundary component will work together. Your Suspense component is wrapped by ErrorBoundary component.
