@@ -92,7 +92,9 @@ Source map files are used to find the exact error which is coming after the buil
 If you are bored to run `npm run build` everytime after changing th content of file. There are other ways available which runs `npm run build` automatically, such as :
 
 1) webpack's **[watch mode](https://webpack.js.org/configuration/watch/#watch)**
-2) webpack-dev-server
+2) [webpack-dev-server](https://webpack.js.org/guides/development/)
 3) webpack-dev-middleware
 
 In most of the cases, you will work with **webpack-dev-server** which will automatically compile your bundle file, if it get changes.
+
+There is one disadvantage of **watch mode**, it will compile automatically if the file content is changed, but we need to reload the page manually. To fix this issue, the best solution is to use **webpack-dev-server**. **webpack-dev-server** will compile and reload the page automatically. It will open in `localhost:8080` by default.
