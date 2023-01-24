@@ -105,3 +105,20 @@ Code splitting can be done in three ways :
   1) Multiple entry points
   2) Prevent Duplication by runtimechunk for single page and SliptChunksPlugin to remove duplication chunks in `/dist` folder.
   3) Dynamic `import`
+
+### Prefetching and Preloading Modules :
+Prefetching and Preloading modules are used to improve web application performance by code slpitting.
+
+Where,
+  - Prefetch = loads the next page resource
+  - Preload = loads the current page resource
+  
+It can be seen in the header of index.html, say for example:
+```javascript
+<link rel="preload" href="style.css" as="style" />
+<link rel="prefetch" href="index.js" as="script" />
+```
+
+- When, you see `preload` in `rel` attribute of `<link>` tag, it means you are telling to browser to load this resources assets first. It will have **higher priority** than other resources. It will download the resource when the current page is loaded.
+
+- When you see something like `prefetch` in `rel` attribute of `<link>` tag, it means it will load or download the resources when the browser is free. It has **low priority** than `preload`. `prefetch` can also be used at the time of **page navigation**. And after giving higher priority to the resource, if you are not using that resource at initial stage, than it will warn you in the console too which is a good feature.
