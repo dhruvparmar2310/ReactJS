@@ -81,3 +81,8 @@ module.export = {
 ```
 
 There are two modes **production** and **development**. The plugin used here, **html-webpack-plugin** will build bundle file in optimzed form in production mode by default.
+
+### Source Map files:
+Source map files are used to find the exact error which is coming after the build process in the bundle file. If you have three bundle files in single bundle.js file, then if the error is occured in third file, to catch the exact location of it with line number, source map file comes in picture. Source map files are used for debugging purpose.
+
+There are many ways to use [source map](https://webpack.js.org/configuration/devtool) files
