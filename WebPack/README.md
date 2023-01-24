@@ -87,4 +87,12 @@ ___
 
 Source map files are used to find the exact error which is coming after the build process in the bundle file. If you have three bundle files in single bundle.js file, then if the error is occured in third file, to catch the exact location of it with line number, source map file comes in picture. Source map files are used for debugging purpose.
 
-There are many ways to use [source map](https://webpack.js.org/configuration/devtool) files
+> *There are many ways to use [source map](https://webpack.js.org/configuration/devtool) files.*
+
+If you are bored to run `npm run build` everytime after changing th content of file. There are other ways available which runs `npm run build` automatically, such as :
+
+1) webpack's **[watch mode](https://webpack.js.org/configuration/watch/#watch)**
+2) webpack-dev-server
+3) webpack-dev-middleware
+
+In most of the cases, you will work with **webpack-dev-server** which will automatically compile your bundle file, if it get changes.
