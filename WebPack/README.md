@@ -46,3 +46,6 @@ You can config webpack in three ways:
 1) Manually creating `dist/index.html`
 2) config webpack through `npx webpack --config webpack.config.js`
 3) by running `npm run build`
+
+## Asset Management :
+Asset Management includes, loading css style, json files, images, fonts, etc.
