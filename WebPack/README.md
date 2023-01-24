@@ -196,4 +196,4 @@ In short, we can say that, if I open Webpack website and close and again open th
 
 Caching is used to store few needed details. Which will speed the performance instead of downloading the content again. But we there a changes made in that website, than it may lack due to that.
 
-In caching, there is a concept of `contenthash`. It will create an unqiue key at the time of build process.
+In caching, there is a concept of `contenthash`. It will create an unqiue key at the time of build process. If there is any change made in the file, this key automatically changes during build.
