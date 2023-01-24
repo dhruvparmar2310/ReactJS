@@ -105,14 +105,14 @@ There are two ways to define modes :
   1) inside the script in `package.json`
   2) inside your `webpack.config.js` file
 
-1) inside the script in `package.json`
+### 1) inside the script in `package.json`
 ```javascript
 "scripts": {
   "build": "webpack --mode=development"
 }
 ```
 
-2) inside your `webpack.config.js` file
+### 2) inside your `webpack.config.js` file
 ```javascript
 "mode": "development"
 ```
