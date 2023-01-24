@@ -107,6 +107,7 @@ Code splitting can be done in three ways :
   3) Dynamic `import`
 
 ### Prefetching and Preloading Modules :
+---
 Prefetching and Preloading modules are used to improve web application performance by code slpitting.
 
 Where,
@@ -124,3 +125,12 @@ It can be seen in the header of index.html, say for example:
 - When you see something like `prefetch` in `rel` attribute of `<link>` tag, it means it will load or download the resources when the browser is free. It has **low priority** than `preload`. `prefetch` can also be used at the time of **page navigation**. And after giving higher priority to the resource, if you are not using that resource at initial stage, than it will warn you in the console too which is a good feature.
 
 - You can also watch the priority of any resource in your developing tool Network's tab. Here, after clicking to one of the column, give the **priority**. Here, you will find which resource has higher priority and which has low. 
+
+### Bundle Analyzer :
+---
+Once you start splitting your code, bundle analyzer is useful. There are many several bundle analyzers :
+  1) webpack-chart: it will display in pie chart.
+  2) webpack-visualizer: we can visualize and analyse, it is similar to pie chart.
+  3) webpack-bundle-analyzer: it is mostly used to analyze the size of your bundle.
+  4) webpack bundle optimizer helper: it also provides the suggestion to improve and reduce your bundle size.
+  5) bundle-stats: it will generate bundle report and compare its result with different builds.
