@@ -187,3 +187,7 @@ new BundleAnalyzerPlugin()
 ```
 
 Now run the `npm run build`, it will open in `[localhost:8888](http://127.0.0.1:8888/)` by default, and there you can see the bundle analyzer.
+
+## Caching :
+
+This allows sites to load faster with less unnecessary network traffic.
