@@ -70,6 +70,23 @@ npm i --save-dev html-webpack-plugin
 ```
 After that require() in the webpack config file, and include the plugin. It will generate bundle file automatically. If you have created it manually, it will replace with new and in optimized form.
 
+### Manifest :
+How webpack and its plugins knows what files are being generated. All the thing is done through **manifest files**. To create manifest file automatically through the plugin, install the below plugin
+```javascript
+npm install webpack-nano webpack-manifest-plugin --save-dev
+```
+Here, webpack-nano allows users to use file types like webpack.config.babel.js , webpack.config.es6 , webpack.config.mjs , and webpack.config.ts, etc.
+
+Add the below code in your `webpack.config.js` file
+```javascript
+const { WebpackManifestPlugin } = require('webpack-manifest-plugin');
+
+// also add this too
+plugins: [
+    new WebpackManifestPlugin()
+  ]
+```
+
 ## Development :
 It is used to set the modes of your project. it is used to avoid the warnings of mode options during `npm run build`. You need to specifies mode in your `webpack.config.js` file.
 
@@ -79,6 +96,7 @@ module.export = {
   entry: ...
 }
 ```
+And run the `npm run build` again, you will find `manifest.json` file generated automatically. It contains the json-object of filename's as a key and build filename as its value.
 
 There are two modes **production** and **development**. The plugin used here, **html-webpack-plugin** will build bundle file in optimzed form in production mode by default.
 
