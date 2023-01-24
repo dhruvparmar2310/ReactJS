@@ -63,5 +63,6 @@ And change file name to this, to manage it properly:
 filename: '[name].bundle.js'
 ```
 The about code will create `index.bundle.js` and `about.bundle.js` files.
+
 Now to create bundle file with plugin, use **HtmlWebpackPlugin**
 
