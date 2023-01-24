@@ -49,3 +49,19 @@ You can config webpack in three ways:
 
 ## Asset Management :
 Asset Management includes, loading css style, json files, images, fonts, etc.
+
+## Output Management :
+If you have multiple entry points you can use:
+```javascript
+entry: {
+  index: './src/index.js',
+  about: './src/about.js'
+}
+```
+And change file name to this, to manage it properly:
+```javascript
+filename: '[name].bundle.js'
+```
+The about code will create `index.bundle.js` and `about.bundle.js` files.
+Now to create bundle file with plugin, use **HtmlWebpackPlugin**
+
