@@ -69,3 +69,15 @@ Now to create bundle file with plugin, use **HtmlWebpackPlugin**. To install it 
 npm i --save-dev html-webpack-plugin
 ```
 After that require() in the webpack config file, and include the plugin. It will generate bundle file automatically. If you have created it manually, it will replace with new and in optimized form.
+
+## Development :
+It is used to set the modes of your project. it is used to avoid the warnings of mode options during `npm run build`. You need to specifies mode in your `webpack.config.js` file.
+
+```javascript
+module.export = {
+  mode: 'development',
+  entry: ...
+}
+```
+
+There are two modes **production** and **development**. The plugin used here, **html-webpack-plugin** will build bundle file in optimzed form in production mode by default.
