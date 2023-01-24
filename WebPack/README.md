@@ -134,3 +134,18 @@ Once you start splitting your code, bundle analyzer is useful. There are many se
   3) webpack-bundle-analyzer: it is mostly used to analyze the size of your bundle.
   4) webpack bundle optimizer helper: it also provides the suggestion to improve and reduce your bundle size.
   5) bundle-stats: it will generate bundle report and compare its result with different builds.
+
+To use **webpack-bundle-analyzer**, you need to install it first.
+```javascript
+npm install --save-dev webpack-bundle-analyzer
+```
+
+Now add this in your webpack config file:
+```javascript
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+```
+
+and add this inside plugins:
+```javascript
+new BundleAnalyzerPlugin()
+```
