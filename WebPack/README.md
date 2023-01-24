@@ -98,3 +98,10 @@ If you are bored to run `npm run build` everytime after changing th content of f
 In most of the cases, you will work with **webpack-dev-server** which will automatically compile your bundle file, if it get changes.
 
 There is one disadvantage of **watch mode**, it will compile automatically if the file content is changed, but we need to reload the page manually. To fix this issue, the best solution is to use **webpack-dev-server**. **webpack-dev-server** will compile and reload the page automatically. It will open in `localhost:8080` by default.
+
+
+## Code Splitting :
+Code splitting can be done in three ways :
+  1) Multiple entry points
+  2) Prevent Duplication by runtimechunk for single page and SliptChunksPlugin to remove duplication chunks in `/dist` folder.
+  3) Dynamic `import`
