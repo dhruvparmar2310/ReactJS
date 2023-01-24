@@ -99,7 +99,24 @@ module.export = {
 }
 ```
 
-There are two modes **production** and **development**. The plugin used here, **html-webpack-plugin** will build bundle file in optimzed form in production mode by default.
+There are three modes **none**, **production** and **development**. The plugin used here, **html-webpack-plugin** will build bundle file in optimzed form in production mode by default. 
+
+There are two ways to define modes :
+  1) inside the script in `package.json`
+  2) inside your `webpack.config.js` file
+
+1) inside the script in `package.json`
+```javascript
+"scripts": {
+  "build": "webpack --mode=development"
+}
+```
+
+2) inside your `webpack.config.js` file
+```javascript
+"mode": "development"
+```
+
 
 ### Source Map files:
 ___
