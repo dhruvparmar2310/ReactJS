@@ -86,6 +86,8 @@ plugins: [
     new WebpackManifestPlugin()
   ]
 ```
+And run the `npm run build` again, you will find `manifest.json` file generated automatically. It contains the json-object of filename's as a key and build filename as its value.
+
 
 ## Development :
 It is used to set the modes of your project. it is used to avoid the warnings of mode options during `npm run build`. You need to specifies mode in your `webpack.config.js` file.
@@ -96,7 +98,6 @@ module.export = {
   entry: ...
 }
 ```
-And run the `npm run build` again, you will find `manifest.json` file generated automatically. It contains the json-object of filename's as a key and build filename as its value.
 
 There are two modes **production** and **development**. The plugin used here, **html-webpack-plugin** will build bundle file in optimzed form in production mode by default.
 
