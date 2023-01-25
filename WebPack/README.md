@@ -339,7 +339,9 @@ Basically, environment variables are used to store your secure credential data l
 There are few steps to be followed to get access of `.env` files:
 ```javascript
 /*
-Step-1: You need to create `.env` file in your root folder. 
-The variable should start with prefix of "REACT_APP_" 
+Step-1: You need to create ".env" file in your root folder. Also add it in your ".gitignore" file, because it will keep your data secure, no one will be able to see the api links. ".gitignore" will ignore this file during build process.
+
+Step-2: The variable should start with prefix of "REACT_APP_" 
+Step-3: Now restart your server to reflect the data.
 */
 ```
