@@ -345,3 +345,42 @@ Step-2: The variable should start with prefix of "REACT_APP_"
 Step-3: Now restart your server to reflect the data.
 */
 ```
+
+To use `env` in your webpack, add this in `package.json` files `scripts`.
+```javascript
+"build": "webpack --env production"
+```
+
+To get access of `env` in your `webpack.config.js` file, make a few changes:
+```javascript
+const path = require('path');
+
+module.exports = (env) => {
+  // Use env.<YOUR VARIABLE> here:
+  console.log('Production: ', env.production); // true
+
+  return {
+    entry: './src/index.js',
+    output: {
+      filename: 'bundle.js',
+      path: path.resolve(__dirname, 'dist'),
+    },
+  };
+}
+```
+
+Lets creates an `.env` file in the root folder.
+> *.env*
+
+```javascript
+REACT_APP_SECRET_KEY=123456
+REACT_APP_PASSWORD='abc@123'
+```
+
+Now, to get access of this file in your react component,
+```javascript
+<>
+  {process.env.REACT_APP_SECRET_KEY}
+</>
+```
+Now restart the server, so that you can get reflected data.
