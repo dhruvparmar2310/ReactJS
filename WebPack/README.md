@@ -174,6 +174,18 @@ optimization: {
 ```
 After adding the above code you will have two more files generated with you, `runtime.bundle.js` and `shared.bundle.js` file. Now you can see the duplication of `lodash` is removed from both the bundles. Now that `lodash node_modules` is seperated from both the bundles and that `lodash.js` file is generated/loaded in `shared.bundle.js` file. `runtime.bundle.js` file contains, all the loaded chunks/modules in it. 
 
+### SplitChunksPlugin :
+The SplitChunksPlugin allows us to extract common dependencies into an existing entry chunk or an entirely new chunk. Now change the previous code of `webpack.config.js` file to below code:
+
+```javascript
+optimization: {
+     splitChunks: {
+       chunks: 'all',
+     },
+   },
+```
+Now you can see the change in `index.bundle.js` and `another.bundle.js` file, the `lodash` duplicate dependency is removed. Even the `runtime.bundle.js` file is remove and that file is included under the `shared.bundle.js` file.
+
 ### Prefetching and Preloading Modules :
 ---
 Prefetching and Preloading modules are used to improve web application performance by code slpitting.
@@ -240,6 +252,63 @@ plugin: [
 optimization: {
   runtimeChunk: 'single',
 }
+```
+
+To remove all the `node_modules` dependency from the `main.[contenthash].js` file, add the below code in `webpack.config.js` file:
+```javascript
+optimization: {
+    runtimeChunk: 'single',
+    splitChunks: {
+      cacheGroups: {
+        vendor: {
+          test: /[\\/]node_modules[\\/]/,
+          name: 'vendors',
+          chunks: 'all',
+        },
+      },
+    },
+  },
+```
+After running `npm run build`, now you will have `main.[contenthash].js`, `runtime.[contenthash].js` and `vendor.[contenthash].js` file with you. You will find all the `node_modules` dependency libraries are seperated in `vendor.[contenthash].js` file from the other bundle files. You can also observe the previous file size and recent file size of `main.[contenthash].js` file.
+
+### Module Identifier:
+Initially, you should have:
+```javascript
+webpack-demo
+|- package.json
+|- package-lock.json
+|- webpack.config.js
+|- /dist
+|- /src
+  |- index.js
+|- /node_modules
+```
+
+Now create one `print.js` file under `src` folder.
+
+> *print.js*
+```javascript
+ export default function print(text) {
+   console.log(text);
+ };
+```
+
+Now update the `index.js` file
+```javascript
+ import _ from 'lodash';
+ import Print from './print';
+
+  function component() {
+    const element = document.createElement('div');
+
+    // Lodash, now imported by this script
+    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+   element.onclick = Print.bind(null, 'Hello webpack!');
+
+    return element;
+  }
+
+  document.body.appendChild(component());
 ```
 
 ### What is actually runtimeChunk file ?
