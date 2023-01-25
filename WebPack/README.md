@@ -214,3 +214,20 @@ optimization: {
 Runtime files contains code which enables loading of your chunks. If you open any of those runtime files, you will see code which loads your chunks via Jsonp. You are now free to load any chunks at any time. 
 
 RuntimeChunk consists of all the code webpack needs to connect your modularized application while it's running in the browser. It contains the loading and resolving logic needed to connect your modules as they interact. A JSONP is a javascript file which just contains a function wrapping JSON data.
+
+Here the `main.[contenthash].js` file contents all the `node_modules` libraries and `index.js` file code. After writting the below code in your `webpack.config,js` file, you will get an `vendor.[contenthash].js` file generated, which seperates the `node_modules` libraries from the `main.[contenthash].js` file.
+
+```javascript
+optimization: {
+  runtimeChunk: 'single',
+  splitChunks: {
+    cacheGroups: {
+      vendor: {
+        test: /[\\/]node_modules[\\/]/,
+        name: 'vendors',
+        chunks: 'all',
+      },
+    },
+  }, 
+},
+```
