@@ -151,6 +151,29 @@ entry: {
 }
 ```
 
+If there are any duplicated modules between entry chunks they will be included in both bundles. As lodash is also imported within `./src/index.js` and will thus be duplicated in both bundles. To seperate that duplication from both the bundles, **prevent duplication** comes in picture.
+
+### Prevent Duplication :
+By default, every entry chunk stores all the modules that it uses. The `dependOn` option allows to share the modules between the chunks:
+```javascript
+   index: {
+      import: './src/index.js',
+      dependOn: 'shared',
+    },
+    another: {
+      import: './src/another-module.js',
+      dependOn: 'shared',
+    },
+    shared: 'lodash',
+```
+If we are working with multiple entry points in single Html file, code splitting provides `optimization.runtimeChunk` option:
+```javascript
+optimization: {
+  runtimeChunk: "single",
+}
+```
+After adding the above code you will have two more files generated with you, `runtime.bundle.js` and `shared.bundle.js` file. Now you can see the duplication of `lodash` is removed from both the bundles. Now that `lodash node_modules` is seperated from both the bundles and that `lodash.js` file is generated/loaded in `shared.bundle.js` file. `runtime.bundle.js` file contains, all the loaded chunks/modules in it. 
+
 ### Prefetching and Preloading Modules :
 ---
 Prefetching and Preloading modules are used to improve web application performance by code slpitting.
