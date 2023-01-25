@@ -197,3 +197,20 @@ In short, we can say that, if I open Webpack website and close and again open th
 Caching is used to store few needed details. Which will speed the performance instead of downloading the content again. But we there a changes made in that website, than it may lack due to that.
 
 In caching, there is a concept of `contenthash`. It will create an unqiue key at the time of build process. If there is any change made in the file, this key automatically changes during build.
+
+### Extracting Boilerplate :
+
+As we know SplitChunkPlugin was used for code splitting purpose. We can also get a runtime chunk file by adding the below code in your `webpack.config.js` file. Set it to `single` to create a single runtime bundle for all chunks.
+```javascript
+plugin: [
+...
+],
+optimization: {
+  runtimeChunk: 'single',
+}
+```
+
+### What is actually runtimeChunk file ?
+Runtime files contains code which enables loading of your chunks. If you open any of those runtime files, you will see code which loads your chunks via Jsonp. You are now free to load any chunks at any time. 
+
+RuntimeChunk consists of all the code webpack needs to connect your modularized application while it's running in the browser. It contains the loading and resolving logic needed to connect your modules as they interact. A JSONP is a javascript file which just contains a function wrapping JSON data.
