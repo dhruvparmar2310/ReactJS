@@ -332,3 +332,14 @@ optimization: {
   }, 
 },
 ```
+
+## Environment Variables :
+Basically, environment variables are used to store your secure credential data like api link, api keys, path, etc. 
+
+There are few steps to be followed to get access of `.env` files:
+```javascript
+/*
+Step-1: You need to create `.env` file in your root folder. 
+The variable should start with prefix of "REACT_APP_" 
+*/
+```
