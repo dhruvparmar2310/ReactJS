@@ -142,6 +142,15 @@ Code splitting can be done in three ways :
   2) Prevent Duplication by runtimechunk for single page and SliptChunksPlugin to remove duplication chunks in `/dist` folder.
   3) Dynamic `import`
 
+### 1) Multiple Entry points :
+We can have multiple entry points in our project. To define a multiple entry points in `webpack.config.js` file, write the elow code:
+```javascript
+entry: {
+  index: './src/index.js',
+  another: './src/another-module.js',
+}
+```
+
 ### Prefetching and Preloading Modules :
 ---
 Prefetching and Preloading modules are used to improve web application performance by code slpitting.
