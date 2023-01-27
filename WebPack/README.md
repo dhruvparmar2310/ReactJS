@@ -412,6 +412,6 @@ There are few things which you must keep in mind during Development mode, such a
 Before going further, you need to know what is `nonce` in CSP.
 
 ### What is `Nonce` in CSP ?
-A nonce is a **random number** used only once per page load. A nonce-based CSP can only mitigate XSS(Cross Site Scripting) if the nonce value is not guessable by an attacker.
+A nonce is a **random number** used only once per page load. A nonce-based CSP can only mitigate/reduce XSS(Cross Site Scripting) if the nonce value is not guessable by an attacker.
 
 > *Refer this [blog](https://web.dev/strict-csp/) for more details.*
