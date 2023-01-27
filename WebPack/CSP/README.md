@@ -36,3 +36,5 @@ Fetch directives control the locations from which certain resource types may be 
 `default-src`: When there is no directives present, then the user agent will search for `default-src`. Its just like in case of **switch-case** `default`.
   
 `font-src`: If you want to only load those fonts which your web application uses and block other font sites, then `font-src` is useful feature.
+  
+`img-src`: If you want to use the image of Website-1, than you need to specify that website in your `value` in `meta` tags content. If once you have written in meta-tag, and if you try to use image from other website, than that website will be blocked.
