@@ -432,3 +432,7 @@ Vagrant is a tool which simplifies the management of Virtual Machine.
 
 ### What is Virtual Machine ?
 If I am using Mac OS in my computer and for project development, I need Windows OS in some case, than I can build my own OS in Virtual Machine for the orgainization and can use that Virtual Machine in other computers too, instead of downloading Windows in other computers.
+
+
+## Hot Module Replacement :
+HMR is the most commonly used feature of webpack. It allows the feature like, all the modules should be updated during the runtime without refreshing the whole module. HMR exchanges, adds, or removes modules while an application is running, without a full reload. 
