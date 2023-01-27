@@ -13,6 +13,8 @@ You can add it inside your `html` page:
 ```javascript
 <meta http-equiv="Content-Security-Policy" content="<directive> <value>;<directive> <value>"
 ```
+      
+When you specifies the value of directives in meta tag, only that content will be allowed, if any other website link is used than CSP will block that site.
 
 > *Refer this [video](https://www.youtube.com/watch?v=txHc4zk6w3s) for proper explaination about why there is need of CSP ?*
 
