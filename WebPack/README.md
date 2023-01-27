@@ -415,3 +415,4 @@ Before going further, you need to know what is `nonce` in CSP.
 A nonce is a **random number** used only once per page load, which can make ```<script>``` tag as trusted. A nonce-based CSP can only mitigate/reduce XSS(Cross Site Scripting) if the nonce value is not guessable by an attacker.
 
 > *Refer this [blog](https://web.dev/strict-csp/) for more details.*
+> *[Click here]() to Read more.*
