@@ -398,3 +398,12 @@ DLL stands for Dynamic Link Library. It help in code reuse, reduce disk space, e
 
 > *Refer this [blog](https://blog.logrocket.com/speed-up-your-webpack-build-with-the-dll-plugin/) for better understanding.*
 
+### Build Performance - Development Mode:
+There are few things which you must keep in mind during Development mode, such as, incremental build, compile in memory, devTools, avoid production specific toolings, minimal entry chunk, output without path info, typescript loader, etc.
+
+*Incremental Build* :
+- Use webpack watch mode as much as possible.
+- Avoid using other tools to watch your files.
+- In some setups, watching falls back to polling mode.
+- If there are so many watch files, this can cause a issue to load CPU. In these cases, you can increase the polling interval with `watchOptions.poll`.
+
