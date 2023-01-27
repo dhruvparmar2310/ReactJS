@@ -384,3 +384,16 @@ Now, to get access of this file in your react component,
 </>
 ```
 Now restart the server, so that you can get reflected data.
+
+### Build Performance :
+There are few things which you must know at the time of build process such as, the package must be up-to-date, use minimal loaders, DLL Plugin, etc.
+
+### What is DLL Plugin ?
+
+DLL is a webpack plugin which it creates the bundle configurations as a part of build process. It will keep track of what's ever changes made in the package and re-build the bundles accordingly.
+
+DLL stands for Dynamic Link Library. It help in code reuse, reduce disk space, efficient memory usage, etc. So, the OS load faster and run faster. To use DLL plugin, two plugins must be installed in your webpack config :
+  1) DllReferencePlugin: it is used for un-vendor code, which can be modifed. It is your primary webpack config file (i.e.: `webpack.config.js`).
+  2) DllPlugin: it is used for vendor code, which does not change, it remains as it is such as all libraries in your *node_modules* folder. It will config your `webpack.vendor.config.js`
+
+
