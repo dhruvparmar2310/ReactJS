@@ -394,6 +394,8 @@ DLL is a webpack plugin which it creates the bundle configurations as a part of 
 
 DLL stands for Dynamic Link Library. It help in code reuse, reduce disk space, efficient memory usage, etc. So, the OS load faster and run faster. To use DLL plugin, two plugins must be installed in your webpack config :
   1) DllReferencePlugin: it is used for un-vendor code, which can be modifed. It is your primary webpack config file (i.e.: `webpack.config.js`).
-  2) DllPlugin: it is used for vendor code, which does not change, it remains as it is such as all libraries in your *node_modules* folder. It will config your `webpack.vendor.config.js`
+  2) DllPlugin: it is used for vendor code, which does not change, it remains as it is such as all libraries in your *node_modules* folder. It will config your `webpack.vendor.config.js`.
+
+> *Refer this [blog](https://blog.logrocket.com/speed-up-your-webpack-build-with-the-dll-plugin/) for better understanding.*
 
 
