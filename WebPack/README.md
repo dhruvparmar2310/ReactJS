@@ -385,7 +385,7 @@ Now, to get access of this file in your react component,
 ```
 Now restart the server, so that you can get reflected data.
 
-### Build Performance :
+## Build Performance :
 There are few things which you must know at the time of build process such as, the package must be up-to-date, use minimal loaders, DLL Plugin, etc.
 
 ### What is DLL Plugin ?
