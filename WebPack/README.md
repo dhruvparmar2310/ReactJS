@@ -436,3 +436,5 @@ If I am using Mac OS in my computer and for project development, I need Windows 
 
 ## Hot Module Replacement :
 HMR is the most commonly used feature of webpack. It allows the feature like, all the modules should be updated during the runtime without refreshing the whole module. HMR exchanges, adds, or removes modules while an application is running, without a full reload. 
+
+HMR should only be used in **development mode** rather than in production mode.
