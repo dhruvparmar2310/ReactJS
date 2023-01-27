@@ -22,5 +22,4 @@ There are many types of declaratives:
 ### 1) Fetch Declaratives :
 Fetch directives control the locations from which certain resource types may be loaded.
 
-`child-src`: It is used when the browser context loads the elements by using `<iframe>` and `<frame>`. 
-           - When you are working with browser nested context, use `frame-src` and `worker-src` instead of `child-src` respectively.
+`child-src`: It is used when the browser context loads the elements by using `<iframe>` and `<frame>`. When you are working with browser nested context, use `frame-src` and `worker-src` instead of `child-src` respectively.
