@@ -409,7 +409,7 @@ There are few things which you must keep in mind during Development mode, such a
 
 
 ## Content Security Policy (CSP):
-Before going further, you need to know what is `nonce` in CSP.
+Before going further, you need to know what is `nonce` in CSP. Content-Security-Policy is the name of a HTTP response header that modern browsers use to enhance the security of the document (or web page).
 
 ### What is `Nonce` in CSP ?
 A nonce is a **random number** used only once per page load, which can make ```<script>``` tag as trusted. A nonce-based CSP can only mitigate/reduce XSS(Cross Site Scripting) if the nonce value is not guessable by an attacker.
