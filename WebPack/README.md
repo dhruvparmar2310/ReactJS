@@ -417,3 +417,18 @@ A nonce is a **random number** used only once per page load, which can make ```<
 > *Refer this [blog](https://web.dev/strict-csp/) for more details.*
 
 > *[Click here](CSP/README.md) to Read more.*
+
+
+## Development - Vagrant :
+If you have a more advanced project and use Vagrant to run your development environment in a Virtual Machine, you'll often want to also run webpack in the VM.
+
+Developers describe Vagrant as "A tool for building and distributing development environments". Vagrant provides the framework and configuration format to create and manage complete portable development environments. These development environments can live on your computer or in the cloud, and are portable between Windows, Mac OS X, and Linux.
+
+Vagrant belongs to "Virtual Machine Management" category of the tech stack, while Webpack can be primarily classified under "JS Build Tools / JS Task Runners".
+
+Vagrant is a tool which simplifies the management of Virtual Machine.
+
+> *Refer this [video](https://youtu.be/oo7RhkQ_DLQ) of Vagrant.*
+
+### What is Virtual Machine ?
+If I am using Mac OS in my computer and for project development, I need Windows OS in some case, than I can build my own OS in Virtual Machine for the orgainization and can use that Virtual Machine in other computers too, instead of downloading Windows in other computers.
