@@ -416,4 +416,4 @@ A nonce is a **random number** used only once per page load, which can make ```<
 
 > *Refer this [blog](https://web.dev/strict-csp/) for more details.*
 
-> *[Click here](/CSP/README.md) to Read more.*
+> *[Click here](CSP/README.md) to Read more.*
