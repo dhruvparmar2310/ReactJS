@@ -38,3 +38,5 @@ Fetch directives control the locations from which certain resource types may be 
 `font-src`: If you want to only load those fonts which your web application uses and block other font sites, then `font-src` is useful feature.
   
 `img-src`: If you want to use the image of Website-1, than you need to specify that website in your `value` in `meta` tags content. If once you have written in meta-tag, and if you try to use image from other website, than that website will be blocked.
+  
+`prefetch-src`: It specifies which source is valid for prefetch or pre-render.
