@@ -44,9 +44,9 @@ Also write the below code in your `index.html` file:
 
 You can config webpack in three ways:
 
-  1) Manually creating `dist/index.html`
-  2) config webpack through `npx webpack --config webpack.config.js`
-  3) by running `npm run build`
+  - Manually creating `dist/index.html`
+  - config webpack through `npx webpack --config webpack.config.js`
+  - by running `npm run build`
 
 ## Asset Management :
 Asset Management includes, loading css style, json files, images, fonts, etc.
@@ -103,8 +103,8 @@ module.export = {
 There are three modes **none**, **production** and **development**. The plugin used here, **html-webpack-plugin** will build bundle file in optimzed form in production mode by default. 
 
 There are two ways to define modes :
-  1) inside the script in `package.json`
-  2) inside your `webpack.config.js` file
+  - inside the script in `package.json`
+  - inside your `webpack.config.js` file
 
 ### 1) inside the script in `package.json`
 ```javascript
@@ -128,9 +128,9 @@ Source map files are used to find the exact error which is coming after the buil
 
 If you are bored to run `npm run build` everytime after changing the content of file. There are other ways available which runs `npm run build` automatically, such as :
 
-1) webpack's **[watch mode](https://webpack.js.org/configuration/watch/#watch)**
-2) [webpack-dev-server](https://webpack.js.org/guides/development/)
-3) webpack-dev-middleware
+  - webpack's **[watch mode](https://webpack.js.org/configuration/watch/#watch)**
+  - [webpack-dev-server](https://webpack.js.org/guides/development/)
+  - webpack-dev-middleware
 
 In most of the cases, you will work with **webpack-dev-server** which will automatically compile your bundle file, if it get changes.
 
@@ -139,9 +139,9 @@ There is one disadvantage of **watch mode**, it will compile automatically if th
 
 ## Code Splitting :
 Code splitting can be done in three ways :
-  1) Multiple entry points
-  2) Prevent Duplication by runtimechunk for single page and SliptChunksPlugin to remove duplication chunks in `/dist` folder.
-  3) Dynamic `import`
+  - Multiple entry points
+  - Prevent Duplication by runtimechunk for single page and SliptChunksPlugin to remove duplication chunks in `/dist` folder.
+  - Dynamic `import`
 
 ### 1) Multiple Entry points :
 We can have multiple entry points in our project. To define a multiple entry points in `webpack.config.js` file, write the below code:
@@ -210,11 +210,11 @@ It can be seen in the header of index.html, say for example:
 ### Bundle Analyzer :
 ---
 Once you start splitting your code, bundle analyzer is useful. There are many several bundle analyzers :
-  1) webpack-chart: it will display in pie chart.
-  2) webpack-visualizer: we can visualize and analyse, it is similar to pie chart.
-  3) webpack-bundle-analyzer: it is mostly used to analyze the size of your bundle.
-  4) webpack bundle optimizer helper: it also provides the suggestion to improve and reduce your bundle size.
-  5) bundle-stats: it will generate bundle report and compare its result with different builds.
+  - webpack-chart: it will display in pie chart.
+  - webpack-visualizer: we can visualize and analyse, it is similar to pie chart.
+  - webpack-bundle-analyzer: it is mostly used to analyze the size of your bundle.
+  - webpack bundle optimizer helper: it also provides the suggestion to improve and reduce your bundle size.
+  - bundle-stats: it will generate bundle report and compare its result with different builds.
 
 To use **webpack-bundle-analyzer**, you need to install it first.
 ```javascript
