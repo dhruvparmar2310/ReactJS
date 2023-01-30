@@ -301,6 +301,7 @@ Code-splitting your app can help you “lazy-load” just the things that are cu
 import() is the concept of code-splitting, we can use it dynamically.
 
 > *Before:*
+
 ```javascript
 import { add } from './math'
 
@@ -308,6 +309,7 @@ console.log(add(10, 20))
 ```
 
 > *After:*
+
 ```javascript
 import('./math').then(math => {
   console.log(math.add(10, 20))
@@ -318,11 +320,13 @@ import('./math').then(math => {
 lazy() is the concept of code splitting, and this function will render the dynamic `import` as a regular component.
 
 > *Before:*
+
 ```javascript
 import Card from './card'
 ```
 
 > *After:*
+
 ```javascript
 const Card = React.lazy(() => import('./card'));
 ```
