@@ -239,7 +239,7 @@ This allows sites to load faster with less unnecessary network traffic.
 
 In short, we can say that, if I open Webpack website and close and again open that webpack, it may download the source content due to this it may take time. So to solve this issue, there is a technique called caching.
 
-Caching is used to store few needed details. Which will speed the performance instead of downloading the content again. But we there a changes made in that website, than it may lack due to that.
+Caching is used to store few needed details. Which will speed the performance instead of downloading the content again. But if there is any changes made in that website, than it may lack due to that.
 
 In caching, there is a concept of `contenthash`. It will create an unqiue key at the time of build process. If there is any change made in the file, this key automatically changes during build.
 
