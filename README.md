@@ -198,6 +198,7 @@ The name itself says, there will be an styled component which can be used like R
 For example: I have an styled component of Title
 
 > *title.css*
+
 ```javascript
 const Title = styled.h1`
   font-size: 1.5em;
@@ -206,6 +207,7 @@ const Title = styled.h1`
 ```
 
 > *Home.js*
+
 ```javascript
 import Title from './style/Title/title.css'
 
@@ -228,6 +230,7 @@ npm install sass
 
 for example: my website runs on 3 colors than I can create variables in `_variables.scss` files and use it.
 > *_variables.scss*
+
 ```javascript
 $primary: #a2b9bc;
 $secondary: #b2ad7f;
