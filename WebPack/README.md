@@ -288,7 +288,7 @@ webpack-demo
 Now create one `print.js` file under `src` folder.
 
 > *print.js*
-> 
+
 ```javascript
  export default function print(text) {
    console.log(text);
