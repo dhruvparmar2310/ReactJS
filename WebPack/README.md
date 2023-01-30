@@ -126,7 +126,7 @@ Source map files are used to find the exact error which is coming after the buil
 
 > *There are many ways to use [source map](https://webpack.js.org/configuration/devtool) files.*
 
-If you are bored to run `npm run build` everytime after changing th content of file. There are other ways available which runs `npm run build` automatically, such as :
+If you are bored to run `npm run build` everytime after changing the content of file. There are other ways available which runs `npm run build` automatically, such as :
 
 1) webpack's **[watch mode](https://webpack.js.org/configuration/watch/#watch)**
 2) [webpack-dev-server](https://webpack.js.org/guides/development/)
@@ -144,7 +144,7 @@ Code splitting can be done in three ways :
   3) Dynamic `import`
 
 ### 1) Multiple Entry points :
-We can have multiple entry points in our project. To define a multiple entry points in `webpack.config.js` file, write the elow code:
+We can have multiple entry points in our project. To define a multiple entry points in `webpack.config.js` file, write the below code:
 ```javascript
 entry: {
   index: './src/index.js',
