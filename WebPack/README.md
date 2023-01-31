@@ -407,3 +407,5 @@ Lazy loading is one of the most common design patterns used in web and mobile de
 > Refer this blog for more information of [Lazy Loading](./LazyLoading/README.md) | Webpack
 
 > Also Refer [this blog](https://www.cloudflare.com/en-gb/learning/performance/what-is-lazy-loading/) for getting clear idea about Lazy Loading.
+
+> [How to implement Lazy Loading in React](https://www.cloudflare.com/en-gb/learning/performance/what-is-lazy-loading/) ?
