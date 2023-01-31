@@ -94,7 +94,7 @@ And run the `npm run build` again, you will find `manifest.json` file generated 
 > *Refer this blog for [Development](./Development/README.md) | Webpack.*
 
 ## Code Splitting :
-> *Refer this blog for [Code Spliting](./CodeSpliting/README.md).*
+> *Refer this blog for [Code Spliting](./CodeSpliting/README.md) | Webpack.*
 
 ## Caching :
 
@@ -399,3 +399,5 @@ Now run again `npm run build`, you will be able to see the changes. You will fin
 ## Production :
 > Refer this blog for [Production](./Production/README.md) | Webpack
 
+## Lazy Loading :
+> Refer this blog for more information of [Lazy Loading](./LazyLoading/README.md) | Webpack
