@@ -439,3 +439,70 @@ If I am using Mac OS in my computer and for project development, I need Windows 
 HMR is the most commonly used feature of webpack. It allows the feature like, all the modules should be updated during the runtime without refreshing the whole module. HMR exchanges, adds, or removes modules while an application is running, without a full reload. 
 
 HMR should only be used in **development mode** rather than in production mode.
+
+## Tree Shaking :
+Tree shaking is commonly used in the JavaScript context for **dead-code elimination**.
+
+Let's move further, with an example. Initially you will have few things with you:
+```javascript
+webpack-demo
+|- package.json
+|- package-lock.json
+|- webpack.config.js
+|- /dist
+ |- bundle.js
+ |- index.html
+|- /src
+ |- index.js
+ |- cake.js
+|- /node_modules
+```
+
+> *src/cake.js*
+
+```javascript
+export function cake () {
+  console.log('Cake is being ordered.')
+}
+
+export function pestryCake (x) {
+  console.log('Pestry Cake is being ordered.')
+}
+```
+
+Now, setup the mode of your `webpack.config.js` file:
+```javascript
+const path = require('path');
+
+module.exports = {
+  entry: './src/index.js',
+  output: {
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'dist'),
+ },
+ mode: 'development', /* set mode to development */
+ optimization: {
+   usedExports: true, /* set usedExports to true because, it will check all the used and un-used exports and make a list of it during build process. */
+ },
+};
+```
+
+> *src/index.js*
+
+```javascript
+ import { cake } from './cake.js';
+
+ function component() {
+   const element = document.createElement('pre');
+
+   element.innerHTML = [
+     'Hello webpack!', 
+     'calling ', 'cake.js'].join('\n\n');
+
+    return element;
+  }
+
+  document.body.appendChild(component());
+```
+
+Now, run the `npm run build` to see the `bundle.js` file.
