@@ -8,7 +8,6 @@ Let's have a glance in nutshell, in **development** we mainly focuses in the **s
  webpack-demo
  |- package.json
  |- package-lock.json
- |- webpack.config.js
  |- webpack.common.js
  |- webpack.dev.js
  |- webpack.prod.js
