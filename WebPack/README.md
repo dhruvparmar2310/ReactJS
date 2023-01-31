@@ -441,6 +441,12 @@ HMR is the most commonly used feature of webpack. It allows the feature like, al
 HMR should only be used in **development mode** rather than in production mode.
 
 ## Tree Shaking :
+
+```javascript
+        | Application |
+| node-modules | | un-used node-modules |
+| node-modules |
+```
 Tree shaking is commonly used in the JavaScript context for **dead-code elimination**.
 
 Let's move further, with an example. Initially you will have few things with you:
@@ -523,4 +529,6 @@ There are few rules to be followed for tree shaking:
 - use the ES5 syntax of `import` and `export`.
 - use `sideEffects` in your `package.json` file. SideEffects means **free from un-used code**.
 
-We can also set `sideEffects` in `webpack.config.js` file through **module.rules.sideEffetcs**. The sideEffects and usedExports (**more known as tree shaking**) optimizations are two different things. `usedExports` relies on terser to detect side effects in statements. Terser is used by the plugin, it will minimize your javascript code.
+We can also set `sideEffects` in `webpack.config.js` file through **module.rules.sideEffetcs**. The sideEffects and usedExports (**more known as tree shaking**) optimizations are two different things. `usedExports` relies on terser to detect side effects in statements. Terser is used by the plugin, it will minimize your javascript code. Now to finally remove the dead-code from the `bundle.js` file too, remove the `optimization.useExports` and make mode to `production`.
+
+Now run again `npm run build`, you will be able to see the changes. You will find your code is optimized. Now try to find `pestryCake` function in your `bundle.js` file in your text-editior, there is nothing like `pestryCake` in it.
