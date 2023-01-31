@@ -70,7 +70,7 @@ Similarly, for `webpack.prod.js`
  });
 ```
 
-Here, `merge()` is used to combine `webpack.common.js` with remaining configuration files(i.e.: `wepack.dev.js` and `webpack.prod.js`) respectively. Now, after doing all the above things, make a chnage in your `package.json` scripts.
+Here, `merge()` is used to combine `webpack.common.js` with remaining configuration files (*i.e.: `wepack.dev.js` and `webpack.prod.js`*) respectively. Now, after doing all the above things, make a chnage in your `package.json` scripts.
 
 ```javascript
 "scripts": {
