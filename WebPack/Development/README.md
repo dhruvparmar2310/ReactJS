@@ -1,3 +1,5 @@
+# Development | Webpack
+
 It is used to set the modes of your project. it is used to avoid the warnings of mode options during `npm run build`. You need to specifies mode in your `webpack.config.js` file.
 
 ```javascript
@@ -8,8 +10,6 @@ module.export = {
 ```
 
 There are three modes **none**, **production** and **development**. The plugin used here, **html-webpack-plugin** will build bundle file in optimzed form in production mode by default. 
-
-# Development | Webpack
 
 There are two ways to define modes :
   - inside the script in `package.json`
