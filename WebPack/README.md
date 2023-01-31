@@ -405,5 +405,4 @@ The few things which must do in **production** mode. It mainly focuses on '**bun
 Lazy loading is one of the most common design patterns used in web and mobile development. It is widely used with frameworks like Angular and React to increase an application's performance by reducing initial loading time.
 
 > Refer this blog for more information of [Lazy Loading](./LazyLoading/README.md) | Webpack
-> 
 > Also Refer [this blog](https://www.cloudflare.com/en-gb/learning/performance/what-is-lazy-loading/) for getting clear idea about Lazy Loading.
