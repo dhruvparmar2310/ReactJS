@@ -86,3 +86,5 @@ if (process.env.NODE_ENV !== 'production') {
  }
 ```
 
+## Minification :
+Webpack v4+ will minify your code by default in **production** mode. To minify the code manually, you must use [TerserWebpackPlugin](https://webpack.js.org/plugins/terser-webpack-plugin/). We also have other option for **dtandard** minification, [ClosureWebpackPlugin](https://github.com/webpack-contrib/closure-webpack-plugin). These plugin also eliminates the dead code and also provide `optimization.minimizer`. 
