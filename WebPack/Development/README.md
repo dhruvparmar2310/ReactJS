@@ -44,5 +44,5 @@ In most of the cases, you will work with **webpack-dev-server** which will autom
 
 There is one disadvantage of **watch mode**, it will compile automatically if the file content is changed, but we need to reload the page manually. To fix this issue, the best solution is to use **webpack-dev-server**. **webpack-dev-server** will compile and reload the page automatically. It will open in `localhost:8080` by default.
 
-> ### Tips: 
+> **Tips:** 
 > *Avoid inline-*** and eval-*** use in production as they can increase bundle size and reduce the overall performance.*
