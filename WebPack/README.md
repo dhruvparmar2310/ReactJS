@@ -94,7 +94,7 @@ And run the `npm run build` again, you will find `manifest.json` file generated 
 > *Refer this blog for [Development](./Development/README.md) | Webpack.*
 
 ## Code Splitting :
-> *Refer this blog for [Code Spliting](./CodeSplitting/README.md).*
+> *Refer this blog for [Code Spliting](./CodeSpliting/README.md).*
 
 ## Caching :
 
