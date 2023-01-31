@@ -397,7 +397,11 @@ We can also set `sideEffects` in `webpack.config.js` file through **module.rules
 Now run again `npm run build`, you will be able to see the changes. You will find your code is optimized. Now try to find `pestryCake` function in your `bundle.js` file in your text-editior, there is nothing like `pestryCake` in it.
 
 ## Production :
+The few things which must do in **production** mode. It mainly focuses on '**bundled files**'.
+
 > Refer this blog for [Production](./Production/README.md) | Webpack
 
 ## Lazy Loading :
+Lazy loading is one of the most common design patterns used in web and mobile development. It is widely used with frameworks like Angular and React to increase an application's performance by reducing initial loading time.
+
 > Refer this blog for more information of [Lazy Loading](./LazyLoading/README.md) | Webpack
