@@ -465,7 +465,7 @@ export function cake () {
   console.log('Cake is being ordered.')
 }
 
-export function pestryCake (x) {
+export function pestryCake () {
   console.log('Pestry Cake is being ordered.')
 }
 ```
@@ -505,4 +505,22 @@ module.exports = {
   document.body.appendChild(component());
 ```
 
-Now, run the `npm run build` to see the `bundle.js` file.
+Now, run the `npm run build` to see the `bundle.js` file. You will find the un-used export is also included in your `bundle.js` file. You will find pestryCake function is also included in your `bundle.js` file but with that you will also find something like:
+
+```javascript
+/* unused harmony export square */ /* <-- */
+/* ... */
+function cake () {
+  console.log('Cake is being ordered.')
+}
+
+function pestryCake () {
+  console.log('Pestry Cake is being ordered.')
+}
+```
+
+There are few rules to be followed for tree shaking:
+- use the ES5 syntax of `import` and `export`.
+- use `sideEffects` in your `package.json` file. SideEffects means **free from un-used code**.
+
+We can also set `sideEffects` in `webpack.config.js` file through **module.rules.sideEffetcs**. The sideEffects and usedExports (**more known as tree shaking**) optimizations are two different things. `usedExports` relies on terser to detect side effects in statements. Terser is used by the plugin, it will minimize your javascript code.
