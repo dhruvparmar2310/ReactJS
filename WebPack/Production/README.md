@@ -69,3 +69,12 @@ Similarly, for `webpack.prod.js`
    mode: 'production',
  });
 ```
+
+Here, `merge()` is used to combine `webpack.common.js` with remaining configuration files(i.e.: `wepack.dev.js` and `webpack.prod.js`) respectively. Now, after doing all the above things, make a chnage in your `package.json` scripts.
+
+```javascript
+"scripts": {
+ "build": "webpack --config webpack.prod.js",
+ "start": "webpack serve --open --config webpack.dev.js"
+}
+```
