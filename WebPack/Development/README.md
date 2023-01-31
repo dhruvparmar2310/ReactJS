@@ -46,4 +46,4 @@ There is one disadvantage of **watch mode**, it will compile automatically if th
 
 > **Tips:** 
 > 
-> *Avoid inline-*** and eval-*** use in production as they can increase bundle size and reduce the overall performance.*
+> Avoid inline-*** and eval-*** use in production as they can increase bundle size and reduce the overall performance.
