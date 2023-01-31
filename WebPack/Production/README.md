@@ -23,3 +23,49 @@ Now install the `webpack-merge` in your dev-dependency:
 ```javascript
 npm i --save-dev webpack-merge
 ```
+
+Your `webpack.common.js` should contain the common webpack configurations like **entry point, output, plugins, loaders which are common,** etc.
+```javascript
+ const path = require('path');
+ const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+ module.exports = {
+   entry: {
+     main: './src/index.js',
+   },
+   output: {
+     filename: '[name].bundle.js',
+     path: path.resolve(__dirname, 'dist'),
+     clean: true,
+   },
+   plugins: [
+     new HtmlWebpackPlugin({
+       title: 'Production | Webpack',
+     }),
+   ],
+ };
+```
+
+And your `webpack.dev.js` should contain all the required devTool, mode, etc.
+```javascript
+ const { merge } = require('webpack-merge');
+ const common = require('./webpack.common.js');
+
+ module.exports = merge(common, {
+   mode: 'development',
+   devtool: 'inline-source-map',
+   devServer: {
+     static: './dist',
+   },
+ });
+```
+
+Similarly, for `webpack.prod.js`
+```javascript
+ const { merge } = require('webpack-merge');
+ const common = require('./webpack.common.js');
+
+ module.exports = merge(common, {
+   mode: 'production',
+ });
+```
