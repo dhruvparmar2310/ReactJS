@@ -79,4 +79,10 @@ Here, `merge()` is used to combine `webpack.common.js` with remaining configurat
 }
 ```
 
+If you wanna know, in which mode you are right now, then add the below code in your `index.js` file.
+```javascript
+if (process.env.NODE_ENV !== 'production') {
+   console.log('Looks like we are in development mode!');
+ }
+```
 
