@@ -50,7 +50,7 @@ optimization: {
 Now you can see the change in `index.bundle.js` and `another.bundle.js` file, the `lodash` duplicate dependency is removed. Even the `runtime.bundle.js` file is remove and that file is included under the `shared.bundle.js` file.
 
 ## Prefetching and Preloading Modules :
----
+
 Prefetching and Preloading modules are used to improve web application performance by code slpitting.
 
 Where,
@@ -70,7 +70,7 @@ It can be seen in the header of index.html, say for example:
 - You can also watch the priority of any resource in your developing tool Network's tab. Here, after clicking to one of the column, give the **priority**. Here, you will find which resource has higher priority and which has low. 
 
 ## Bundle Analyzer :
----
+
 Once you start splitting your code, bundle analyzer is useful. There are many several bundle analyzers :
   - webpack-chart: it will display in pie chart.
   - webpack-visualizer: we can visualize and analyse, it is similar to pie chart.
