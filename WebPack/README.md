@@ -409,3 +409,13 @@ Lazy loading is one of the most common design patterns used in web and mobile de
 > Also Refer [this blog](https://www.cloudflare.com/en-gb/learning/performance/what-is-lazy-loading/) for getting clear idea about Lazy Loading.
 
 > [How to implement Lazy Loading in React](https://www.cloudflare.com/en-gb/learning/performance/what-is-lazy-loading/) ?
+
+## ECMAScript Modules :
+ECMAScript stands for **European Computer Manufacturers Association Script**. It is a scripting language based on JavaScript. Invented by **Brendan Eich** at Netscape, ECMAScript made its first appearance in the **Navigator 2.0** browser. The ECMAScript specification is a blueprint for creating a scripting language. JavaScript is an implementation of that blueprint.
+
+**ECMAScript Modules** (ESM) is a specification for using Modules in the Web. It's supported by all modern browsers and the recommended way of writing modular code for the Web.
+
+Webpack supports processing ECMAScript Modules to optimize them. ESM are the official standard format to **package JavaScript code** for reuse. Modules are defined using a variety of **import** and **export** statements.
+
+
+A file with `.mjs` extension is a JavaScript source code file that is used as an ECMA Module (ECMAScript Module) in Node. Refer this [blog](https://docs.fileformat.com/web/mjs/) for more.
