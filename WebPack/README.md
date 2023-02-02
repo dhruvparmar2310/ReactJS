@@ -421,6 +421,8 @@ Webpack supports processing ECMAScript Modules to optimize them. ESM are the off
 A file with `.mjs` extension is a JavaScript source code file that is used as an ECMA Module (ECMAScript Module) in Node. Refer this [blog](https://docs.fileformat.com/web/mjs/) for more.
 
 ## Web Worker :
-Web Workers are a simple means for web content to run scripts in background threads. The worker thread can perform tasks without interfering with the user interface.
+Web Workers are a simple means for web content to **run scripts in background threads**. The worker thread can perform tasks without interfering with the **user interface**.
 
 WebSockets allow web applications to open a channel to interact with web services. Web Workers permit them to run nontrivial tasks without locking the browser.
+
+A worker is an object created using a constructor (**e.g. Worker()**) that runs a named JavaScript file — this file contains the code that will run in the worker thread; workers run in another global context that is different from the current window. 
