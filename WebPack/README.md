@@ -465,3 +465,6 @@ The service worker is immediately downloaded when a user first accesses a servic
 > **How to manipulate DOM using a service worker in JavaScript?** 
 >
 > *[Click Here](https://www.tutorialspoint.com/how-to-manipulate-dom-using-a-service-worker-in-javascript#:~:text=So%2C%20we%20check%20whether%20is,worker%20is%20an%20async%20event.)*
+
+## What is PWA ?
+> Refer this blog for [PWA](./PWA/README.md) | Webpack
