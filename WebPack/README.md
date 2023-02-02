@@ -445,6 +445,8 @@ There are mainly three types of web workers :
 - Shared
 - Service
 
+> *Refer [this blog](https://www.freecodecamp.org/news/how-webworkers-work-in-javascript-with-example/) for How Web Worker works ?*
+
 ### Service Worker:
 Service workers only run over HTTPS, for security reasons. Service workers essentially act as proxy servers that sit between web applications, the browser, and the network (when available). They are intended, among other things, to enable the creation of effective offline experiences, intercept network requests and take appropriate action based on whether the network is available, and update assets residing on the server.
 
