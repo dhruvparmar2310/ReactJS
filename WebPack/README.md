@@ -435,3 +435,5 @@ if (window.Worker) {
 ```
 
 Now, create a new worker by just calling `Worker()` constructor, which accepts the URL script file, which is going to work in workers thread without blocking the UI.
+
+> *Refer this [official docs](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers) for more details.*
