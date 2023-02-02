@@ -445,6 +445,9 @@ There are mainly three types of web workers :
 - Shared
 - Service
 
+Web workers cannot perform any kind of DOM manipulation as it does not have access to the Window object, the Document Object, or the DOM.
+Web workers can't access DOM elements from the web page. Web workers can't access global variables and JavaScript functions from the web page. Web workers can't call alert() or confirm() functions. Objects such as window, document and parent can't be accessed inside the web worker.
+
 > *Refer [this blog](https://www.freecodecamp.org/news/how-webworkers-work-in-javascript-with-example/) for How Web Worker works ?*
 
 ### Service Worker:
@@ -458,3 +461,7 @@ Your service worker will observe the following lifecycle:
 The service worker is immediately downloaded when a user first accesses a service worker–controlled site/page.
 
 > *Refer this [official docs](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers) for more details.*
+
+> **How to manipulate DOM using a service worker in JavaScript?** 
+>
+> *[Click Here](https://www.tutorialspoint.com/how-to-manipulate-dom-using-a-service-worker-in-javascript#:~:text=So%2C%20we%20check%20whether%20is,worker%20is%20an%20async%20event.)*
