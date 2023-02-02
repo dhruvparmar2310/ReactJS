@@ -434,6 +434,8 @@ if (window.Worker) {
 }
 ```
 
-Now, create a new worker by just calling `Worker()` constructor, which accepts the URL script file, which is going to work in workers thread without blocking the UI.
+Now, create a new worker by just calling `Worker()` constructor, which accepts the URL script file, which is going to work in workers thread without blocking the UI. 
+
+A shim is a piece of code **used to correct the behavior of code** that already exists, usually by adding new API that works around the problem. This differs from a polyfill, which implements a new API that is **not supported** by the stock browser as shipped.
 
 > *Refer this [official docs](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers) for more details.*
