@@ -420,6 +420,10 @@ Webpack supports processing ECMAScript Modules to optimize them. ESM are the off
 
 A file with `.mjs` extension is a JavaScript source code file that is used as an ECMA Module (ECMAScript Module) in Node. Refer this [blog](https://docs.fileformat.com/web/mjs/) for more.
 
+## Shimming :
+A shim is a piece of code **used to correct the behavior of code** that already exists, usually by adding new API that works around the problem. This differs from a polyfill, which implements a new API that is **not supported** by the stock browser as shipped.
+
+
 ## Web Worker :
 Web Workers are a simple means for web content to **run scripts in background threads**. The worker thread can perform tasks without interfering with the **user interface**.
 
@@ -436,6 +440,19 @@ if (window.Worker) {
 
 Now, create a new worker by just calling `Worker()` constructor, which accepts the URL script file, which is going to work in workers thread without blocking the UI. 
 
-A shim is a piece of code **used to correct the behavior of code** that already exists, usually by adding new API that works around the problem. This differs from a polyfill, which implements a new API that is **not supported** by the stock browser as shipped.
+There are mainly three types of web workers :
+- Dedicated
+- Shared
+- Service
+
+### Service Worker:
+Service workers only run over HTTPS, for security reasons. Service workers essentially act as proxy servers that sit between web applications, the browser, and the network (when available). They are intended, among other things, to enable the creation of effective offline experiences, intercept network requests and take appropriate action based on whether the network is available, and update assets residing on the server.
+
+Your service worker will observe the following lifecycle:
+- Download
+- Install
+- Activate
+
+The service worker is immediately downloaded when a user first accesses a service worker–controlled site/page.
 
 > *Refer this [official docs](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers) for more details.*
