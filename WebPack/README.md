@@ -426,3 +426,12 @@ Web Workers are a simple means for web content to **run scripts in background th
 WebSockets allow web applications to open a channel to interact with web services. Web Workers permit them to run nontrivial tasks without locking the browser.
 
 A worker is an object created using a constructor (**e.g. Worker()**) that runs a named JavaScript file — this file contains the code that will run in the worker thread; workers run in another global context that is different from the current window. 
+
+All you wanna do is to wrap your worker to access code in your `main.js` file:
+```javascript
+if (window.Worker) {
+  /* ... */
+}
+```
+
+Now, create a new worker by just calling `Worker()` constructor, which accepts the URL script file, which is going to work in workers thread without blocking the UI.
